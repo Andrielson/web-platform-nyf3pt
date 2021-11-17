@@ -1,11 +1,63 @@
 <html>
   <head>
-    <meta charset="UTF-8">
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <meta charset="UTF-8" />
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <div class="container">
+      <header class="header">
+        <div class="title-box">
+          <h1 class="title-1">Boletim do Diário Oficial</h1>
+          <h2 class="title-2">São José do Rio Preto-SP</h2>
+        </div>
+      </header>
+      <main class="main">
+        <section class="subscribe-section">
+          <h1 style="text-align: center">Inscreva-se gratuitamente!</h1>
+          <div style="display: flex; flex-direction: column">
+            <label for="inputEmail">E-mail:</label>
+            <input
+              id="inputEmail"
+              type="email"
+              placeholder="digite seu e-mail"
+            />
+          </div>
+          <div>
+            <input
+              id="inputRadioAllPublications"
+              type="radio"
+              name="keywords-flag"
+              checked
+            />
+            <label for="inputRadioAllPublications">Todas as publicações</label>
+          </div>
+          <div>
+            <input
+              id="inputRadioByKeywords"
+              type="radio"
+              name="keywords-flag"
+            />
+            <label for="inputRadioByKeywords"
+              >Por palavras-chave <i>help</i></label
+            >
+          </div>
+          <div>
+            <label for="inputKeywords">Palavras-chave:</label>
+            <div>
+              <input
+                id="inputKeywords"
+                type="text"
+                placeholder="palavras-chave"
+              />
+              <button type="button">✖️</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <h4>Andrielson</h4>
+      </footer>
+    </div>
   </body>
 </html>
